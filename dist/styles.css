@@ -1,0 +1,195 @@
+/* GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  border: 0 solid transparent;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*--END RESET--------------------*/
+/*--START LAYOUT--------------------*/
+.page {
+  display: grid;
+  grid-template-rows: auto 50px;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  max-width: 450px;
+  height: 100vh;
+  margin-inline: auto;
+  padding-top: 4.5rem;
+  padding-inline: 1.5rem;
+  background-color: hsl(0, 0%, 81%);
+}
+
+.page__main {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 900px) {
+  .page {
+    max-width: 1140px;
+    margin-inline: auto;
+  }
+
+  .page__main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .page__main > :first-child {
+    grid-column: span 2;
+  }
+
+  .page__main > :nth-last-child(2) {
+    grid-column: 2 / span 2;
+    grid-row-start: 2;
+  }
+
+  .page__main > :nth-last-child(1) {
+    grid-column-start: 4;
+    grid-row: 1 / span 2;
+  }
+}
+
+/*--END LAYOUT--------------------*/
+/*--START SECTION INTRO-----------*/
+/*--END SECTION INTRO-----------*/
+/*--START FOOTER-----------*/
+.footer__attribution {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: hsl(219, 29%, 14%);
+  text-align: center;
+}
+
+.footer__link {
+  color: hsl(263, 55%, 52%);
+  text-decoration: none;
+}
+
+.footer__link:hover {
+  color: hsl(217, 19%, 35%);
+}
+
+/*--END FOOTER--------------------*/
+/*--START CARD--------------------*/
+.card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem 2rem 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
+    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
+    0 16px 16px rgba(0, 0, 0, 0.12);
+}
+
+.card__user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.card__user-avatar {
+  width: 32px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.card__user-avatar--purple {
+  border-color: #a07dd9;
+}
+
+.card__user-avatar--white {
+  border-color: #d9d9d9;
+}
+
+.card__user-avatar--black {
+  border-color: #35445f;
+}
+
+.card__user-name {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.card__user-check {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  line-height: 1.15;
+  opacity: 50%;
+}
+
+.card__testimonial {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.card__text {
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4;
+  opacity: 70%;
+}
+
+.card__title {
+  font-size: 1.25rem;
+}
+
+.card--black {
+  background-color: hsl(219, 29%, 14%);
+}
+
+.card--gray {
+  background-color: hsl(217, 19%, 35%);
+}
+
+.card--purple {
+  background: url("/images/bg-pattern-quotation.svg") no-repeat top right 1.5rem;
+  background-color: hsl(263, 55%, 52%);
+}
+
+@media (min-width: 900px) {
+  .card--purple {
+    background-position: top right 4.5rem;
+  }
+}
+
+.card--white {
+  background-color: hsl(0, 0%, 100%);
+}
+
+.card--light {
+  color: hsl(0, 0%, 100%);
+}
+
+.card--dark {
+  color: hsl(217, 19%, 35%);
+}
+
+/*--END CARD--------------------*/
+
+/*# sourceMappingURL=e:/Designer/FrontendMentor/testimonials-grid-section-main/dist/styles.css.map */

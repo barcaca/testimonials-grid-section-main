@@ -1,0 +1,92 @@
+// ========================== //
+//           CARD             //
+// ========================== //
+
+@use "../base" as *;
+@use "sass:map";
+
+//--CARD----//
+/*--START CARD--------------------*/
+.card {
+  @include grid($gap: $ss-4);
+  padding: $ss-6 $ss-8 $ss-8;
+  border-radius: 0.5rem;
+  box-shadow: $shadow-diffuse;
+
+  &__user {
+    @include grid(auto 1fr, $gap: $ss-4);
+    align-items: center;
+
+    &-avatar {
+      width: 32px;
+      border: 2px solid white;
+      border-radius: 50%;
+
+      &--purple {
+        border-color: lighten($theme-primary-100, 15%);
+      }
+
+      &--white {
+        border-color: darken($theme-neutral-100, 15%);
+      }
+
+      &--black {
+        border-color: lighten($theme-primary-300, 15%);
+      }
+    }
+
+    &-name {
+      @include font-style(13, medium, xs);
+    }
+
+    &-check {
+      @include font-style(11, medium, xs);
+      opacity: 50%;
+    }
+  }
+
+  &__testimonial {
+    @include grid($gap: $ss-9);
+  }
+
+  &__text {
+    @include font-style(13, medium, md);
+    opacity: 70%;
+  }
+
+  &__title {
+    @include font-style(lg);
+  }
+
+  &--black {
+    background-color: $theme-primary-300;
+  }
+
+  &--gray {
+    background-color: $theme-primary-200;
+  }
+
+  &--purple {
+    background: url("/images/bg-pattern-quotation.svg") no-repeat top right
+      $ss-6;
+    background-color: $theme-primary-100;
+
+    @include mq(min, md) {
+      background-position: top right $ss-15;
+    }
+  }
+
+  &--white {
+    background-color: $theme-neutral-100;
+  }
+
+  &--light {
+    color: $theme-neutral-100;
+  }
+
+  &--dark {
+    color: $theme-primary-200;
+  }
+}
+
+/*--END CARD--------------------*/

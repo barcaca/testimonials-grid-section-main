@@ -1,0 +1,35 @@
+// ========================== //
+//           RESET            //
+// ========================== //
+@use "sass:map";
+@use "variables" as *;
+@use "mixins" as *;
+@use "functions" as *;
+
+/*--START RESET--------------------*/
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  border: 0 solid transparent;
+}
+
+body {
+  font-family: $ff-body;
+}
+
+
+img,
+picture,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*--END RESET--------------------*/
