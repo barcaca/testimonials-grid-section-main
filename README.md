@@ -26,8 +26,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Testimonials Grid Section/Frontier Mentor](https://www.frontendmentor.io/solutions/social-proof-section-sassscss-r_wYyn3taT)
-- Live Site URL: [Vercel App](https://social-proof-section-master-livid-kappa.vercel.app)
+- Solution URL: [Testimonials Grid Section/Frontier Mentor](https://www.frontendmentor.io/solutions/testimonials-grid-section-sassscss-cZz6EmFQ0Z)
+- Live Site URL: [Vercel App](https://testimonials-grid-section-main-seven-sandy.vercel.app)
 
 ## My process
 
